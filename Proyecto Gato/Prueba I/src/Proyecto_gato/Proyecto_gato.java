@@ -12,6 +12,7 @@ public class Proyecto_gato extends javax.swing.JFrame {
      */
     public Proyecto_gato() { 
         initComponents();
+        setLocationRelativeTo(null); //Hace que el juego se muestre en el centro de la pantalla
         Jugador.setText("Juega jugador 1");
         juego = 1;
         contador = 0;
@@ -182,7 +183,7 @@ public class Proyecto_gato extends javax.swing.JFrame {
     public boolean monitor;
     public void MarcarJugada(Integer num){ //Metodo constructor
         contador++;
-        if(juego == 1)
+        if(juego == 1) //If para jugadores
             {
                 switch (num)
                 {
@@ -285,7 +286,7 @@ public class Proyecto_gato extends javax.swing.JFrame {
                 }
             }
     }
-    public void VerificarGanador(){
+    public void VerificarGanador(){ //if que verificar si hay ganador
         if(contador>=5)
         {
             System.out.println("btn 1 "+jButton1.getText());
