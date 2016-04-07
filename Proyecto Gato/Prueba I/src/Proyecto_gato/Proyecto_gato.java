@@ -8,9 +8,9 @@ package Proyecto_gato;
 public class Proyecto_gato extends javax.swing.JFrame {
 
     /**
-     * Creates new form Proyecto_gato
+     * Metodo constructor
      */
-    public Proyecto_gato() {
+    public Proyecto_gato() { 
         initComponents();
         Jugador.setText("Juega jugador 1");
         juego = 1;
@@ -175,10 +175,10 @@ public class Proyecto_gato extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    public Integer juego;
+    public Integer juego; //declaracion de variables
     public Integer contador;
     public boolean monitor;
-    public void MarcarJugada(Integer num){
+    public void MarcarJugada(Integer num){ //Metodo constructor
         contador++;
         if(juego == 1)
             {
